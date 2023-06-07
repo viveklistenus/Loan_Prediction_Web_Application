@@ -34,5 +34,34 @@ Before running the application, make sure you have the following installed:
 ```
 git clone <repository_url>
 ```
+2.Install the required Node.js dependencies:
+```
+cd loan-prediction-web-app
+npm init
+npm install
+```
+# Usage
+* Start the Node.js server:
+```
+node server.js
+```
+* Access the web application in your browser at http://localhost:3000.
+* Fill out the loan prediction form with the required information.
+* Click the "Submit" button.
+* The application will process the input and display the prediction result.
+
+# Customization
+If you want to customize or improve the model, follow these steps:
+
+* Modify the loan_prediction.py file to update the prediction logic.
+* Train a new model using your preferred machine learning algorithm.
+* Save the trained model as model.joblib in the project directory.
+* Update the loan_prediction.py file in the Express.js server code to reflect any changes made to the model.
+* Restart the server to apply the changes.
+
+# Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvements, please submit a pull request or open an issue.
+
+
 
 
