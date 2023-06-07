@@ -1,6 +1,9 @@
 # Loan Prediction Web Application using ML
 The Loan Prediction Web Application is a web-based tool that predicts loan approval based on user input. It utilizes a machine learning model to provide an estimated outcome for loan applications. This project aims to assist individuals and financial institutions in making informed decisions regarding loan approvals.
 
+# Dataset used for model training
+https://www.kaggle.com/datasets/altruistdelhite04/loan-prediction-problem-dataset
+
 # Features
 * User-friendly Interface: The web application offers a simple and intuitive user interface where users can easily input their information.
 
