@@ -11,3 +11,13 @@ The Loan Prediction Web Application is a web-based tool that predicts loan appro
 * Customizability: The project provides flexibility for users to customize and improve the prediction model according to their specific requirements.
 
 * Scalability: The web application is built using the Express.js framework, ensuring scalability to handle a large number of concurrent users.
+
+# Technologies Used
+* Node.js: The server-side runtime environment that powers the web application.
+* Express.js: A fast and minimalist web framework for Node.js that handles routing and middleware.
+* EJS: A templating engine that enables dynamic content rendering on the server.
+* Python: The programming language used for machine learning model training and prediction.
+* Pandas: A powerful data manipulation library in Python for handling structured data.
+* scikit-learn: A popular machine learning library in Python that provides various algorithms and tools for model training and evaluation.
+* Joblib: A Python library used for serializing and deserializing machine learning models.
+* Git: Version control system for managing project codebase.
