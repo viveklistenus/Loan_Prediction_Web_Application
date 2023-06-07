@@ -50,6 +50,15 @@ node server.js
 * Click the "Submit" button.
 * The application will process the input and display the prediction result.
 
+# Screenshots
+![1](https://github.com/viveklistenus/Loan_Prediction_Web_Application/assets/28853520/04542ba5-eeef-48d7-97ec-d6893a3a688f)
+
+![2](https://github.com/viveklistenus/Loan_Prediction_Web_Application/assets/28853520/b7b295d7-0b30-4ee4-b24a-e8f2d5b4ecac)
+
+![3](https://github.com/viveklistenus/Loan_Prediction_Web_Application/assets/28853520/ccac12e9-be12-4ba2-8b8e-aa8459b82dc7)
+
+![4](https://github.com/viveklistenus/Loan_Prediction_Web_Application/assets/28853520/fa10284c-88f9-4b91-a7b8-8f1d63b9b9a9)
+
 # Customization
 If you want to customize or improve the model, follow these steps:
 
