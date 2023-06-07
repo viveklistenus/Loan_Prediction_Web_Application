@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loan Prediction Result</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .result {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .approval {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .approval.approved {
+      color: #4CAF50;
+    }
+
+    .approval.not-approved {
+      color: #f44336;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Loan Prediction Result</h1>
+  <div class="result">
+    <p class="approval <%= prediction === 1 ? 'approved' : 'not-approved' %>">
+      <%= prediction === 1 ? 'Approved' : 'Not Approved' %>
+    </p>
+  </div>
+  <p>This project demonstrates a loan prediction model that predicts whether a loan application will be approved or not based on various parameters. The prediction result is displayed above.</p>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loan Prediction</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .start-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 50px;
+      margin: 20px auto;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .start-button:hover {
+      background-color: #45a049;
+    }
+
+    form {
+      display: none;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+  </style>
+  <script>
+    function showForm() {
+      document.getElementById("startButton").style.display = "none";
+      document.getElementById("prompt").style.display="none";
+      document.getElementById("loanForm").style.display = "block";
+    }
+  </script>
+</head>
+<body>
+  <h1>Loan Approval Prediction</h1>
+  <p>Welcome to the Loan Prediction project! This application is designed to predict whether a loan application will be approved or not based on various parameters. By analyzing historical data and utilizing machine learning techniques, our model can provide valuable insights into the likelihood of loan approval.</p>
+  <p id="prompt">To get started, please click the "Start" button below.</p>
+  <button id="startButton" class="start-button" onclick="showForm()">Start</button>
+  <form id="loanForm" method="POST" action="/predict">
+    <!-- Add input fields for the loan parameters -->
+    <!-- Example: -->
+    <label for="ApplicantIncome">Applicant Income:</label>
+    <input type="number" name="ApplicantIncome" required>
+
+    <label for="CoapplicantIncome">Coapplicant Income:</label>
+    <input type="number" name="CoapplicantIncome" required>
+
+    <label for="LoanAmount">Loan Amount:</label>
+    <input type="number" name="LoanAmount" required>
+
+    <label for="Loan_Amount_Term">Loan Amount Term:</label>
+    <input type="number" name="Loan_Amount_Term" required>
+
+    <label for="Credit_History">Credit History:</label>
+    <select name="Credit_History" required>
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </select>
+
+    <label for="Gender_Male">Gender:</label>
+    <select name="Gender_Male" required>
+      <option value="1">Male</option>
+      <option value="0">Female</option>
+    </select>
+
+    <label for="Married_Yes">Married:</label>
+    <select name="Married_Yes" required>
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </select>
+
+    <label for="Dependents_1">Dependents (1):</label>
+    <select name="Dependents_1" required>
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </select>
+
+    <label for="Dependents_2">Dependents (2):</label>
+    <select name="Dependents_2" required>
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </select>
+
+    <label for="Dependents_3plus">Dependents (3+):</label>
+    <select name="Dependents_3plus" required>
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </select>
+
+    <label for="Education_Not_Graduate">Education (Not Graduate):</label>
+    <select name="Education_Not_Graduate" required>
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </select>
+
+    <label for="Self_Employed_Yes">Self Employed:</label>
+    <select name="Self_Employed_Yes" required>
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </select>
+
+    <label for="Property_Area_Semiurban">Property Area (Semiurban):</label>
+    <select name="Property_Area_Semiurban" required>
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </select>
+
+    <label for="Property_Area_Urban">Property Area (Urban):</label>
+    <select name="Property_Area_Urban" required>
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </select>
+    <br>
+    <br>
+    <button type="submit">Predict</button>
+  </form>
+</body>
+</html>
