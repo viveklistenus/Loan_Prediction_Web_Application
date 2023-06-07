@@ -35,7 +35,7 @@ Before running the application, make sure you have the following installed:
 # Installation
 1.Clone the repository:
 ```
-git clone <repository_url>
+git clone https://github.com/viveklistenus/Loan_Prediction_Web_Application.git
 ```
 2.Install the required Node.js dependencies:
 ```
