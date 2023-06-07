@@ -21,3 +21,18 @@ The Loan Prediction Web Application is a web-based tool that predicts loan appro
 * scikit-learn: A popular machine learning library in Python that provides various algorithms and tools for model training and evaluation.
 * Joblib: A Python library used for serializing and deserializing machine learning models.
 * Git: Version control system for managing project codebase.
+
+# Prerequisites
+Before running the application, make sure you have the following installed:
+* Node.js
+* Python
+* pip 
+* npm
+
+# Installation
+1.Clone the repository:
+```
+git clone <repository_url>
+```
+
+
